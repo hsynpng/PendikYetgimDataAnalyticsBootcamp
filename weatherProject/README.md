@@ -82,20 +82,13 @@ belirlenerek ilgili kayıtlar incelendi.
 
 ---
 
+## 📦 Kullanılan Kütüphaneler
+- pandas  
+- numpy
+
+---
+
 ## ▶️ Notebook’u Çalıştırma
 1. Proje klasörünü VS Code veya Jupyter Notebook ile açın  
 2. Gerekli kütüphanelerin yüklü olduğundan emin olun  
 3. Hücreleri sırasıyla çalıştırarak kod ve çıktıları inceleyin  
-
----
-
-## 📦 Kullanılan Kütüphaneler
-- pandas  
-- numpy  
-- openpyxl (isteğe bağlı)
-
----
-
-## ⚙️ Kurulum
-```bash
-pip install pandas numpy openpyxl
