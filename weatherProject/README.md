@@ -1,86 +1,101 @@
-# 🌦️ Weather Data Analysis with Python
+# 🌦️ Hava Durumu Veri Çalışması
 
-Bu çalışma, farklı şehirlerden elde edilen hava durumu verilerinin Python kullanılarak analiz edilmesini amaçlamaktadır.  
-Pandas ve NumPy kütüphaneleri ile veri inceleme, filtreleme, sıralama, gruplama ve temel istatistiksel analizler gerçekleştirilmiştir.
+Bu proje, Türkiye’deki farklı şehirlerden elde edilen hava durumu verileri kullanılarak temel veri işleme ve analiz adımlarının uygulanmasını amaçlamaktadır.  
+Çalışma kapsamında Pandas ve NumPy kütüphaneleri ile veri keşfi, filtreleme, sıralama, gruplama ve özet çıkarma işlemleri gerçekleştirilmiştir.
 
-Proje, veri analitiğine yeni başlayanlar için temel kavramları uygulamalı olarak öğrenmeye yönelik hazırlanmıştır.
-
----
-
-## 📌 Proje Kapsamı
-
-## ⚙️ 1. Ortam Hazırlığı ve Veri Okuma
-- Pandas ve NumPy kütüphaneleri kullanıldı  
-- `weather_data.csv` dosyası DataFrame yapısına aktarıldı  
+Proje, **İş Zekası – Power BI – Tableau Online Aralık Eğitimi** kapsamında, veri analizi mantığını kavramaya yönelik hazırlanmıştır.
 
 ---
 
-## 🔎 2. Veri Setinin İncelenmesi
-Veri setinin genel yapısı analiz edildi:
-
-- İlk ve son kayıtların görüntülenmesi  
-- Sayısal veriler için temel istatistiklerin incelenmesi  
+## 📁 Kullanılan Veri Seti
+- **Dosya adı:** `weather_data.csv`
 
 ---
 
-## 🧩 3. Sütun Seçimi
-- Date, City ve Temperature sütunları ile alt bir tablo oluşturuldu  
-- Şehir ve sıcaklık bilgileri birlikte değerlendirildi  
+## ✅ Yapılan Çalışmalar
+
+### 1️⃣ Kütüphaneler ve Veri Yükleme
+- Pandas ve NumPy projeye dahil edildi  
+- CSV dosyası DataFrame yapısına aktarıldı  
 
 ---
 
-## 🔍 4. Koşullu Filtreleme
-Belirli şartlara göre veri süzme işlemleri yapıldı:
+### 2️⃣ Veri Setini Tanıma
+Veri üzerinde ilk inceleme adımları uygulandı:
+- İlk ve son satırların görüntülenmesi  
+- Sayısal sütunlar için temel istatistiksel özetlerin alınması  
 
+---
+
+### 3️⃣ Sütunlarla Çalışma
+- Date, City ve Temperature sütunları seçildi  
+- Şehir ve sıcaklık bilgileri birlikte incelendi  
+
+---
+
+### 4️⃣ Basit Filtreleme İşlemleri
+Veriler belirli koşullara göre süzüldü:
 - 30°C üzerindeki sıcaklık değerleri  
-- Belirli bir şehre ait verilerin ayrıştırılması  
+- Belirli bir şehre ait kayıtlar  
 
 ---
 
-## 🧠 5. Birden Fazla Koşul ile Filtreleme
-Mantıksal operatörler kullanılarak daha detaylı sorgular oluşturuldu:
-
-- Belirli şehir + nem koşulu  
+### 5️⃣ Mantıksal Koşullar ile Filtreleme
+Birden fazla şart kullanılarak detaylı sorgular oluşturuldu:
+- Şehir ve nem koşulları  
 - Alternatif sıcaklık ve nem kriterleri  
 
 ---
 
-## 📊 6. Veri Sıralama
-Veriler farklı kriterlere göre sıralandı:
-
+### 6️⃣ Veri Sıralama
+Veri seti farklı kriterlere göre yeniden sıralandı:
 - Sıcaklık değerine göre  
 - Nem oranına göre  
-- Şehir adına göre  
+- Şehir adına göre alfabetik olarak  
 
 ---
 
-## ➕ 7. Yeni Özellikler
-Veri setine yeni sütunlar eklendi:
-
-- Fahrenheit cinsinden sıcaklık  
-- Hissedilen sıcaklık değeri  
+### 7️⃣ Yeni Sütun Oluşturma
+Veri setine yeni hesaplanan sütunlar eklendi:
+- **Temperature_F:** Fahrenheit cinsinden sıcaklık  
+- **FeelsLike:** Hissedilen sıcaklık değeri  
 
 ---
 
-## 📚 8. Gruplama İşlemleri
-Şehir bazlı analizler yapıldı:
-
+### 8️⃣ Gruplama ve Özet Analiz
+Veriler şehir bazında gruplanarak:
 - Kayıt sayıları  
 - Ortalama sıcaklık değerleri  
+hesaplandı.
 
 ---
 
-## 🏆 9. Değer Analizi
-- En yüksek sıcaklık kaydı  
+### 9️⃣ En Yüksek ve En Düşük Değerler
+- En yüksek sıcaklık değeri  
 - En düşük nem oranı  
+belirlenerek ilgili kayıtlar incelendi.
 
 ---
 
-## 💾 10. Veri Dışa Aktarma
-Şehir bazlı ortalama sıcaklık sonuçları **Excel dosyası** olarak kaydedildi.
+### 🔟 Sonuçların Kaydedilmesi
+Şehir bazlı özet bilgiler **Excel dosyası** olarak dışa aktarıldı.
+
+---
+
+## ▶️ Notebook’u Çalıştırma
+1. Proje klasörünü VS Code veya Jupyter Notebook ile açın  
+2. Gerekli kütüphanelerin yüklü olduğundan emin olun  
+3. Hücreleri sırasıyla çalıştırarak kod ve çıktıları inceleyin  
 
 ---
 
 ## 📦 Kullanılan Kütüphaneler
 - pandas  
 - numpy  
+- openpyxl (isteğe bağlı)
+
+---
+
+## ⚙️ Kurulum
+```bash
+pip install pandas numpy openpyxl
