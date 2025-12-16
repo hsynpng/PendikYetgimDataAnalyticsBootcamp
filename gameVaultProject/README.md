@@ -27,7 +27,7 @@ Projede aşağıdaki tablolar bulunmaktadır:
   - Güncelleme ve silme işlemleri (UPDATE / DELETE)
   - Raporlama sorguları (SELECT & JOIN)
 
-- `diagram.png`  
+- `drawsql.png`  
   - DrawSQL kullanılarak oluşturulmuş veritabanı diyagramı ekran görüntüsü
 
 ## Kurulum ve Çalıştırma
